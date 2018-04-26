@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLPrivacyProfile="http:///schemas/UMLPrivacyProfile/_dNAUIEldEei-vebD4Po1AQ/23" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLPrivacyProfile/_dNAUIEldEei-vebD4Po1AQ/23 /UMLPrivacyProfile/UMLPrivacyProfile.profile.uml#_dfAqIEldEei-vebD4Po1AQ">
+  <uml:Model xmi:id="_TozKoD2DEei32uAnxJXu0A" name="company">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_Tup7AD2DEei32uAnxJXu0A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VGhF0D2DEei32uAnxJXu0A" name="Employee">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Zd5VwD2DEei32uAnxJXu0A" name="name" type="_-PzXUD2DEei32uAnxJXu0A"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_aOaMsD2DEei32uAnxJXu0A" name="passport" type="_-PzXUD2DEei32uAnxJXu0A"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_gfRt0D2DEei32uAnxJXu0A" name="position" type="_WY1CQD2DEei32uAnxJXu0A" association="_gfODcD2DEei32uAnxJXu0A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gfSU4D2DEei32uAnxJXu0A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gfSU4T2DEei32uAnxJXu0A" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_WY1CQD2DEei32uAnxJXu0A" name="Position">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_bBsq0D2DEei32uAnxJXu0A" name="name" type="_-PzXUD2DEei32uAnxJXu0A"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_bxTi0D2DEei32uAnxJXu0A" name="salary" type="__Izb4D2DEei32uAnxJXu0A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XDvAcD2DEei32uAnxJXu0A" name="Company">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Y25nMD2DEei32uAnxJXu0A" name="name" type="_-PzXUD2DEei32uAnxJXu0A"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_cxPV0D2DEei32uAnxJXu0A" name="taxNumber" type="_-PzXUD2DEei32uAnxJXu0A"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_hnyOAD2DEei32uAnxJXu0A" name="employee" type="_VGhF0D2DEei32uAnxJXu0A" aggregation="composite" association="_hnxm8D2DEei32uAnxJXu0A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hnyOAT2DEei32uAnxJXu0A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hnyOAj2DEei32uAnxJXu0A" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_iYggUz2DEei32uAnxJXu0A" name="position" type="_WY1CQD2DEei32uAnxJXu0A" aggregation="composite" association="_iYggUD2DEei32uAnxJXu0A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iYggVD2DEei32uAnxJXu0A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iYhHYD2DEei32uAnxJXu0A" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_gfODcD2DEei32uAnxJXu0A" memberEnd="_gfRt0D2DEei32uAnxJXu0A _gfSU4j2DEei32uAnxJXu0A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gfRGwD2DEei32uAnxJXu0A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gfRGwT2DEei32uAnxJXu0A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_gfSU4j2DEei32uAnxJXu0A" name="employee" type="_VGhF0D2DEei32uAnxJXu0A" association="_gfODcD2DEei32uAnxJXu0A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ImsaoEIOEeif1JjpNNe3Sw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ImsaoUIOEeif1JjpNNe3Sw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_hnxm8D2DEei32uAnxJXu0A" memberEnd="_hnyOAD2DEei32uAnxJXu0A _hnyOAz2DEei32uAnxJXu0A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hnxm8T2DEei32uAnxJXu0A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hnxm8j2DEei32uAnxJXu0A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_hnyOAz2DEei32uAnxJXu0A" name="company" type="_XDvAcD2DEei32uAnxJXu0A" association="_hnxm8D2DEei32uAnxJXu0A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_iYggUD2DEei32uAnxJXu0A" memberEnd="_iYggUz2DEei32uAnxJXu0A _iYhHYT2DEei32uAnxJXu0A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iYggUT2DEei32uAnxJXu0A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iYggUj2DEei32uAnxJXu0A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_iYhHYT2DEei32uAnxJXu0A" name="company" type="_XDvAcD2DEei32uAnxJXu0A" association="_iYggUD2DEei32uAnxJXu0A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_-PzXUD2DEei32uAnxJXu0A" name="String"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="__Izb4D2DEei32uAnxJXu0A" name="Real"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Tuh_MD2DEei32uAnxJXu0A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_e_HK8EldEei-vebD4Po1AQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_e_HK8UldEei-vebD4Po1AQ" key="Version" value="0.0.24"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_e_HK8kldEei-vebD4Po1AQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_e_HK80ldEei-vebD4Po1AQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_e_HK9EldEei-vebD4Po1AQ" key="Date" value="2018-04-26"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_e_HK9UldEei-vebD4Po1AQ" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TujNUD2DEei32uAnxJXu0A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="/UMLPrivacyProfile/UMLPrivacyProfile.profile.uml#_dfAqIEldEei-vebD4Po1AQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="/UMLPrivacyProfile/UMLPrivacyProfile.profile.uml#_XzDiYD10Eei32uAnxJXu0A"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLPrivacyProfile:PrivacyType xmi:id="_x42kkD2KEei32uAnxJXu0A" type="IDENTIFIER" base_Property="_Y25nMD2DEei32uAnxJXu0A"/>
+  <UMLPrivacyProfile:PrivacyType xmi:id="_1LmHsD2KEei32uAnxJXu0A" type="SENSITIVE" base_Property="_cxPV0D2DEei32uAnxJXu0A"/>
+  <UMLPrivacyProfile:KAnonymity xmi:id="_26i80D2KEei32uAnxJXu0A" k="4" base_Class="_VGhF0D2DEei32uAnxJXu0A">
+    <operations xmi:type="UMLPrivacyProfile:KOperation" xmi:id="_HV4t4D2LEei32uAnxJXu0A" type="NON_PERTURBATIVE_SUPRESSION" property="_Zd5VwD2DEei32uAnxJXu0A"/>
+  </UMLPrivacyProfile:KAnonymity>
+  <UMLPrivacyProfile:PrivacyType xmi:id="_4WpucD2KEei32uAnxJXu0A" type="IDENTIFIER" base_Property="_bBsq0D2DEei32uAnxJXu0A"/>
+  <UMLPrivacyProfile:PrivacyType xmi:id="_7xmyYD2KEei32uAnxJXu0A" type="SENSITIVE" base_Property="_bxTi0D2DEei32uAnxJXu0A"/>
+  <UMLPrivacyProfile:KAnonymity xmi:id="_RDqawD2LEei32uAnxJXu0A" k="3" base_Class="_WY1CQD2DEei32uAnxJXu0A">
+    <operations xmi:type="UMLPrivacyProfile:KOperation" xmi:id="_TQOY8D2LEei32uAnxJXu0A" property="_bxTi0D2DEei32uAnxJXu0A"/>
+  </UMLPrivacyProfile:KAnonymity>
+  <UMLPrivacyProfile:PrivacyType xmi:id="__EoCUD2KEei32uAnxJXu0A" type="IDENTIFIER" base_Property="_Zd5VwD2DEei32uAnxJXu0A"/>
+  <UMLPrivacyProfile:PrivacyType xmi:id="_Dd8zAD2LEei32uAnxJXu0A" type="SENSITIVE" base_Property="_aOaMsD2DEei32uAnxJXu0A"/>
+  <UMLPrivacyProfile:PrivacyMethod xmi:id="_g9zFMEldEei-vebD4Po1AQ" method="SYNTHETIC_HASH" base_Property="_Zd5VwD2DEei32uAnxJXu0A"/>
+  <UMLPrivacyProfile:PrivacyMethod xmi:id="_lMaasEldEei-vebD4Po1AQ" method="SYNTHETIC_RANDOM" base_Property="_aOaMsD2DEei32uAnxJXu0A"/>
+</xmi:XMI>

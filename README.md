@@ -17,6 +17,8 @@ The following image illustrates the developed profile:
 
 ![PrivacyProfile](https://github.com/SOM-Research/privacyProfile/blob/master/images/profile.png)
 
+Note that due to Papyrus profile implementation, the ```AnonymizationMethod``` hierarchy has been flattened.
+
 
 
 

@@ -11,6 +11,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gfSU4D2DEei32uAnxJXu0A" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gfSU4T2DEei32uAnxJXu0A" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_58CMgEnuEeiiDI8ue46vJA" name="age" type="_8K0YQEnuEeiiDI8ue46vJA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_WY1CQD2DEei32uAnxJXu0A" name="Position">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_bBsq0D2DEei32uAnxJXu0A" name="name" type="_-PzXUD2DEei32uAnxJXu0A"/>
@@ -51,6 +52,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_-PzXUD2DEei32uAnxJXu0A" name="String"/>
     <packagedElement xmi:type="uml:PrimitiveType" xmi:id="__Izb4D2DEei32uAnxJXu0A" name="Real"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_8K0YQEnuEeiiDI8ue46vJA" name="Integer"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Tuh_MD2DEei32uAnxJXu0A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_e_HK8EldEei-vebD4Po1AQ" source="PapyrusVersion">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_e_HK8UldEei-vebD4Po1AQ" key="Version" value="0.0.24"/>
@@ -65,18 +67,19 @@
       <appliedProfile xmi:type="uml:Profile" href="/UMLPrivacyProfile/UMLPrivacyProfile.profile.uml#_XzDiYD10Eei32uAnxJXu0A"/>
     </profileApplication>
   </uml:Model>
-  <UMLPrivacyProfile:PrivacyType xmi:id="_x42kkD2KEei32uAnxJXu0A" type="IDENTIFIER" base_Property="_Y25nMD2DEei32uAnxJXu0A"/>
-  <UMLPrivacyProfile:PrivacyType xmi:id="_1LmHsD2KEei32uAnxJXu0A" type="SENSITIVE" base_Property="_cxPV0D2DEei32uAnxJXu0A"/>
+  <UMLPrivacyProfile:PrivacyType xmi:id="_x42kkD2KEei32uAnxJXu0A" base_Property="_Y25nMD2DEei32uAnxJXu0A"/>
+  <UMLPrivacyProfile:PrivacyType xmi:id="_1LmHsD2KEei32uAnxJXu0A" type="IDENTIFIER" base_Property="_cxPV0D2DEei32uAnxJXu0A"/>
   <UMLPrivacyProfile:KAnonymity xmi:id="_26i80D2KEei32uAnxJXu0A" k="4" base_Class="_VGhF0D2DEei32uAnxJXu0A">
-    <operations xmi:type="UMLPrivacyProfile:KOperation" xmi:id="_HV4t4D2LEei32uAnxJXu0A" type="NON_PERTURBATIVE_SUPRESSION" property="_Zd5VwD2DEei32uAnxJXu0A"/>
+    <operations xmi:type="UMLPrivacyProfile:KOperation" xmi:id="_dhMuIEnvEeiiDI8ue46vJA" type="NON_PERTURBATIVE_SUPRESSION" property="_58CMgEnuEeiiDI8ue46vJA"/>
   </UMLPrivacyProfile:KAnonymity>
-  <UMLPrivacyProfile:PrivacyType xmi:id="_4WpucD2KEei32uAnxJXu0A" type="IDENTIFIER" base_Property="_bBsq0D2DEei32uAnxJXu0A"/>
+  <UMLPrivacyProfile:PrivacyType xmi:id="_4WpucD2KEei32uAnxJXu0A" base_Property="_bBsq0D2DEei32uAnxJXu0A"/>
   <UMLPrivacyProfile:PrivacyType xmi:id="_7xmyYD2KEei32uAnxJXu0A" type="SENSITIVE" base_Property="_bxTi0D2DEei32uAnxJXu0A"/>
-  <UMLPrivacyProfile:KAnonymity xmi:id="_RDqawD2LEei32uAnxJXu0A" k="3" base_Class="_WY1CQD2DEei32uAnxJXu0A">
+  <UMLPrivacyProfile:KAnonymity xmi:id="_RDqawD2LEei32uAnxJXu0A" k="4" base_Class="_WY1CQD2DEei32uAnxJXu0A">
     <operations xmi:type="UMLPrivacyProfile:KOperation" xmi:id="_TQOY8D2LEei32uAnxJXu0A" property="_bxTi0D2DEei32uAnxJXu0A"/>
   </UMLPrivacyProfile:KAnonymity>
   <UMLPrivacyProfile:PrivacyType xmi:id="__EoCUD2KEei32uAnxJXu0A" type="IDENTIFIER" base_Property="_Zd5VwD2DEei32uAnxJXu0A"/>
-  <UMLPrivacyProfile:PrivacyType xmi:id="_Dd8zAD2LEei32uAnxJXu0A" type="SENSITIVE" base_Property="_aOaMsD2DEei32uAnxJXu0A"/>
+  <UMLPrivacyProfile:PrivacyType xmi:id="_Dd8zAD2LEei32uAnxJXu0A" type="IDENTIFIER" base_Property="_aOaMsD2DEei32uAnxJXu0A"/>
   <UMLPrivacyProfile:PrivacyMethod xmi:id="_g9zFMEldEei-vebD4Po1AQ" method="SYNTHETIC_HASH" base_Property="_Zd5VwD2DEei32uAnxJXu0A"/>
   <UMLPrivacyProfile:PrivacyMethod xmi:id="_lMaasEldEei-vebD4Po1AQ" method="SYNTHETIC_RANDOM" base_Property="_aOaMsD2DEei32uAnxJXu0A"/>
+  <UMLPrivacyProfile:PrivacyType xmi:id="_JCxiIEnvEeiiDI8ue46vJA" type="QUASIIDENTIFIER" base_Property="_58CMgEnuEeiiDI8ue46vJA"/>
 </xmi:XMI>
